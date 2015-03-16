@@ -8,6 +8,7 @@ public class ExamenSegundaCODTwitter {
     public static void main(String[] args) throws TwitterException {
         /**
          * instancia objeto tipo Metodos() Ventana para acceder a metodos
+         * Ventana de opciones para usar los metodos
          */
         Metodos tweet = new Metodos();
         int option = JOptionPane.showOptionDialog(null, "selecciona opcion", "menu", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, new Object[]{"Mostrar TimeLine", "Buscar en Twitter", "Publica un tweet", "Salir"}, "Salir");
