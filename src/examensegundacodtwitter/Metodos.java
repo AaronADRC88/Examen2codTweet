@@ -10,7 +10,6 @@ import twitter4j.Status;
 import twitter4j.Twitter;
 import twitter4j.TwitterException;
 import twitter4j.TwitterFactory;
-import twitter4j.conf.ConfigurationBuilder;
 
 /**
  *
@@ -18,19 +17,14 @@ import twitter4j.conf.ConfigurationBuilder;
  */
 public class Metodos {
 
-    ConfigurationBuilder cb = new ConfigurationBuilder();
+  
     Twitter twitter;
-
+     
     /**
      * Aqui se introducen los codigos proporcionados en dev.twitter.com
      */
     public Metodos() {
-        cb.setDebugEnabled(true)
-                .setOAuthConsumerKey("ConsumerKey")
-                .setOAuthConsumerSecret("ConsumerSecret")
-                .setOAuthAccessToken("AccessToken")
-                .setOAuthAccessTokenSecret("AccessTokenSecret");
-        twitter = new TwitterFactory(cb.build()).getInstance();
+    twitter=new TwitterFactory().getInstance();
     }
 
     /**
